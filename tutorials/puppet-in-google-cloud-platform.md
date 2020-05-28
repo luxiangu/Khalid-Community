@@ -3,7 +3,7 @@ title: Set up a Puppet Master Agent Configuration in Compute Engine
 description: Learn how to configure Compute Engine instances as a Puppet master and agent, and use a manifest deploy an application from the master to the agent.
 author: ksakib
 tags: Puppet, Google Cloud, Compute Engine, Puppet Master, Puppet Agent
-date_published: 2018-02-11
+date_published: 2018-06-11
 ---
 
 ## Objectives
@@ -77,7 +77,7 @@ You can also do a single sign by
 
 ## Write a simple webserver module and Manifest that will install Apache2 and write hello world page
 
-1. In the puppet-master, go to folder /etc/puppetlabs/code/environments/production/manifests/ and make a manifest file site.pp as
+1. On the puppet-master instance, navigate to the folder /etc/puppetlabs/code/environments/production/manifests/, make a manifest file named site.pp, and copy the following code into it:
 
         node /agent/{
           include webserver
